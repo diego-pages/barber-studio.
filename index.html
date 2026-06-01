@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barber Studio — Premium Barbershop</title>
+  <meta name="description" content="Barber Studio: experiencia premium en cortes, arreglo de barba y cuidado masculino. Reserva tu cita ahora." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon"><i class="fas fa-scissors"></i></span>
+        <div class="logo-text">
+          <span class="logo-main">BARBER</span>
+          <span class="logo-sub">STUDIO</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#reserva" class="nav-cta">Reservar</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-noise"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">— Experiencia Premium —</p>
+      <h1 class="hero-title reveal">
+        El arte de<br /><em>lucir perfecto</em>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Cortes de precisión · Barba impecable · Ambiente de lujo
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#reserva" class="btn btn-gold">Reservar Cita</a>
+        <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Años de experiencia</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3K+</span><span class="stat-label">Clientes satisfechos</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Calificación promedio</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT STRIP ===== -->
+  <section class="about-strip">
+    <div class="strip-container">
+      <div class="strip-item"><i class="fas fa-award"></i><span>Barberos Certificados</span></div>
+      <div class="strip-item"><i class="fas fa-leaf"></i><span>Productos Premium</span></div>
+      <div class="strip-item"><i class="fas fa-clock"></i><span>Sin Esperas</span></div>
+      <div class="strip-item"><i class="fas fa-gem"></i><span>Ambiente Exclusivo</span></div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="section servicios" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Lo que ofrecemos</p>
+        <h2 class="section-title">Nuestros <em>Servicios</em></h2>
+        <p class="section-desc">Cada visita es una experiencia diseñada para hacerte sentir y lucir en tu mejor versión.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card featured">
+          <div class="service-badge">Popular</div>
+          <div class="service-icon"><i class="fas fa-cut"></i></div>
+          <h3>Corte Clásico</h3>
+          <p>Corte a tijera o máquina con lavado y estilizado incluido. La base de todo caballero.</p>
+          <div class="service-features">
+            <span><i class="fas fa-check"></i> Lavado incluido</span>
+            <span><i class="fas fa-check"></i> Estilizado</span>
+            <span><i class="fas fa-check"></i> Productos premium</span>
+          </div>
+          <div class="service-price"><span class="price-from">desde</span><span class="price-amount">S/ 35</span></div>
+          <a href="#reserva" class="btn btn-gold btn-sm">Reservar</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-beard"></i></div>
+          <h3>Barba & Arreglo</h3>
+          <p>Definición, rasurado con navaja y arreglo de contorno. Barba impecable garantizada.</p>
+          <div class="service-features">
+            <span><i class="fas fa-check"></i> Toalla caliente</span>
+            <span><i class="fas fa-check"></i> Navaja artesanal</span>
+          </div>
+          <div class="service-price"><span class="price-from">desde</span><span class="price-amount">S/ 25</span></div>
+          <a href="#reserva" class="btn btn-outline-dark btn-sm">Reservar</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-spa"></i></div>
+          <h3>Tratamiento Facial</h3>
+          <p>Limpieza profunda, exfoliación e hidratación profesional para piel de caballero.</p>
+          <div class="service-features">
+            <span><i class="fas fa-check"></i> Vapor facial</span>
+            <span><i class="fas fa-check"></i> Mascarilla premium</span>
+          </div>
+          <div class="service-price"><span class="price-from">desde</span><span class="price-amount">S/ 45</span></div>
+          <a href="#reserva" class="btn btn-outline-dark btn-sm">Reservar</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-crown"></i></div>
+          <h3>Experiencia VIP</h3>
+          <p>Corte + barba + tratamiento facial + masaje de cabeza. El paquete completo premium.</p>
+          <div class="service-features">
+            <span><i class="fas fa-check"></i> Todo incluido</span>
+            <span><i class="fas fa-check"></i> Bebida de cortesía</span>
+            <span><i class="fas fa-check"></i> Productos de regalo</span>
+          </div>
+          <div class="service-price"><span class="price-from">desde</span><span class="price-amount">S/ 95</span></div>
+          <a href="#reserva" class="btn btn-outline-dark btn-sm">Reservar</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-magic"></i></div>
+          <h3>Coloración</h3>
+          <p>Tinte, mechas o degradado de color con técnicas modernas y productos de alta gama.</p>
+          <div class="service-features">
+            <span><i class="fas fa-check"></i> Colorantes premium</span>
+            <span><i class="fas fa-check"></i> Protección capilar</span>
+          </div>
+          <div class="service-price"><span class="price-from">desde</span><span class="price-amount">S/ 60</span></div>
+          <a href="#reserva" class="btn btn-outline-dark btn-sm">Reservar</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-hand-sparkles"></i></div>
+          <h3>Cejas & Acabados</h3>
+          <p>Definición de cejas, limpieza de nuca y orejas para un acabado perfecto al detalle.</p>
+          <div class="service-features">
+            <span><i class="fas fa-check"></i> Cera especial</span>
+            <span><i class="fas fa-check"></i> Hilo y pinzas</span>
+          </div>
+          <div class="service-price"><span class="price-from">desde</span><span class="price-amount">S/ 15</span></div>
+          <a href="#reserva" class="btn btn-outline-dark btn-sm">Reservar</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERÍA ===== -->
+  <section class="section galeria" id="galeria">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-tag">Nuestro trabajo</p>
+        <h2 class="section-title">Galería de <em>Estilos</em></h2>
+        <p class="section-desc">Cada corte cuenta una historia. Aquí van algunas de las nuestras.</p>
+      </div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall" data-cat="cortes">
+        <div class="gallery-img" style="background: linear-gradient(135deg,#1a1a1a 0%,#3d2b1f 100%);">
+          <div class="gallery-placeholder"><i class="fas fa-cut"></i><span>Fade Clásico</span></div>
+        </div>
+        <div class="gallery-hover"><span>Fade Clásico</span></div>
+      </div>
+      <div class="gallery-item" data-cat="barba">
+        <div class="gallery-img" style="background: linear-gradient(135deg,#2c1810 0%,#4a3728 100%);">
+          <div class="gallery-placeholder"><i class="fas fa-beard"></i><span>Barba Definida</span></div>
+        </div>
+        <div class="gallery-hover"><span>Barba Definida</span></div>
+      </div>
+      <div class="gallery-item" data-cat="cortes">
+        <div class="gallery-img" style="background: linear-gradient(135deg,#0d0d0d 0%,#2a2a2a 100%);">
+          <div class="gallery-placeholder"><i class="fas fa-cut"></i><span>Texturizado Moderno</span></div>
+        </div>
+        <div class="gallery-hover"><span>Texturizado Moderno</span></div>
+      </div>
+      <div class="gallery-item wide" data-cat="vip">
+        <div class="gallery-img" style="background: linear-gradient(135deg,#1c1208 0%,#3d2b00 100%);">
+          <div class="gallery-placeholder"><i class="fas fa-crown"></i><span>Experiencia VIP</span></div>
+        </div>
+        <div class="gallery-hover"><span>Experiencia VIP</span></div>
+      </div>
+      <div class="gallery-item" data-cat="cortes">
+        <div class="gallery-img" style="background: linear-gradient(135deg,#1a0a0a 0%,#3a1a1a 100%);">
+          <div class="gallery-placeholder"><i class="fas fa-cut"></i><span>Degradado Perfecto</span></div>
+        </div>
+        <div class="gallery-hover"><span>Degradado Perfecto</span></div>
+      </div>
+      <div class="gallery-item tall" data-cat="barba">
+        <div class="gallery-img" style="background: linear-gradient(135deg,#0a0a1a 0%,#1a1a3a 100%);">
+          <div class="gallery-placeholder"><i class="fas fa-beard"></i><span>Estilo Completo</span></div>
+        </div>
+        <div class="gallery-hover"><span>Estilo Completo</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EQUIPO ===== -->
+  <section class="section equipo" id="equipo">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Los artistas</p>
+        <h2 class="section-title">Nuestro <em>Equipo</em></h2>
+        <p class="section-desc">Maestros del oficio con años de experiencia y pasión por la perfección.</p>
+      </div>
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-photo">
+            <div class="team-avatar"><i class="fas fa-user"></i></div>
+            <div class="team-socials">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Carlos Mendoza</h3>
+            <p class="team-role">Master Barber · Fundador</p>
+            <p class="team-bio">12 años de experiencia. Especialista en fades y cortes clásicos. Formado en New York.</p>
+            <div class="team-spec">
+              <span>Fade</span><span>Clásicos</span><span>Barba</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card featured">
+          <div class="team-badge">Head Barber</div>
+          <div class="team-photo">
+            <div class="team-avatar"><i class="fas fa-user"></i></div>
+            <div class="team-socials">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Diego Salazar</h3>
+            <p class="team-role">Head Barber · Colorista</p>
+            <p class="team-bio">8 años de experiencia. Ganador del campeonato nacional de barbería 2023. Experto en color.</p>
+            <div class="team-spec">
+              <span>Coloración</span><span>Texturizado</span><span>Diseño</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-photo">
+            <div class="team-avatar"><i class="fas fa-user"></i></div>
+            <div class="team-socials">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Andrés Torres</h3>
+            <p class="team-role">Senior Barber · Facialista</p>
+            <p class="team-bio">6 años de experiencia. Especialista en tratamientos faciales masculinos y barbas artísticas.</p>
+            <div class="team-spec">
+              <span>Facial</span><span>Barba artística</span><span>VIP</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIOS ===== -->
+  <section class="section testimonios" id="testimonios">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-tag">Lo que dicen</p>
+        <h2 class="section-title">Clientes que <em>confían</em></h2>
+      </div>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"Sin duda la mejor experiencia que he tenido en una barbería. El ambiente, la atención y el resultado final son simplemente de otro nivel. Carlos es un artista."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">R</div>
+              <div><strong>Ricardo Villanueva</strong><span>Cliente desde 2021</span></div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"Vine por primera vez hace 6 meses y ya no puedo ir a otro lugar. El paquete VIP es una experiencia que todos los hombres deberían vivir al menos una vez."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">M</div>
+              <div><strong>Marco Huamán</strong><span>Cliente desde 2023</span></div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"Diego me hizo una coloración increíble. Pensé que no era para mí, pero el resultado es natural y moderno a la vez. Ahora vengo cada mes sin falta."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">J</div>
+              <div><strong>Javier Quispe</strong><span>Cliente desde 2022</span></div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"Traje a mi hijo por primera vez y quedó feliz. Los barberos son súper amables y el ambiente es relajado. Ya tenemos nuestro lugar fijo en familia."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">L</div>
+              <div><strong>Luis Castillo</strong><span>Cliente desde 2024</span></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn prev" id="sliderPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next" id="sliderNext"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HORARIOS ===== -->
+  <section class="section horarios" id="horarios">
+    <div class="container">
+      <div class="horarios-grid">
+        <div class="horarios-info">
+          <p class="section-tag">Visítanos</p>
+          <h2 class="section-title">Horarios de <em>Atención</em></h2>
+          <p>Estamos listos para recibirte. Puedes venir directamente o reservar tu cita con anticipación para garantizar tu espacio.</p>
+          <div class="schedule-list">
+            <div class="schedule-item">
+              <span class="schedule-day">Lunes – Viernes</span>
+              <span class="schedule-hours">9:00 AM – 8:00 PM</span>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-day">Sábado</span>
+              <span class="schedule-hours">8:00 AM – 9:00 PM</span>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-day">Domingo</span>
+              <span class="schedule-hours">10:00 AM – 6:00 PM</span>
+            </div>
+            <div class="schedule-item closed">
+              <span class="schedule-day">Feriados nacionales</span>
+              <span class="schedule-hours">Cerrado</span>
+            </div>
+          </div>
+          <a href="#reserva" class="btn btn-gold">Agendar Cita</a>
+        </div>
+        <div class="horarios-image">
+          <div class="horarios-placeholder">
+            <i class="fas fa-scissors"></i>
+            <span>Barber Studio</span>
+            <small>Miraflores, Lima</small>
+          </div>
+          <div class="horarios-badge">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Av. Larco 1234, Miraflores</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAPA ===== -->
+  <section class="mapa-section" id="ubicacion">
+    <div class="mapa-header">
+      <p class="section-tag">Dónde estamos</p>
+      <h2 class="section-title">Nuestra <em>Ubicación</em></h2>
+    </div>
+    <div class="mapa-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0!2d-77.03!3d-12.12!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA3JzEyLjAiUyA3N8KwMDEnNDguMCJX!5e0!3m2!1ses!2spe!4v1234567890"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Mapa Barber Studio"></iframe>
+      <div class="mapa-card">
+        <h3><i class="fas fa-map-marker-alt"></i> Barber Studio</h3>
+        <p>Av. Larco 1234, Miraflores</p>
+        <p>Lima, Perú</p>
+        <a href="https://maps.google.com" target="_blank" class="btn btn-gold btn-sm">Cómo llegar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESERVA / CONTACTO ===== -->
+  <section class="section contacto" id="contacto">
+    <div class="container">
+      <div class="contacto-grid">
+
+        <div class="contacto-info" id="reserva">
+          <p class="section-tag">Contáctanos</p>
+          <h2 class="section-title">Reserva tu <em>Cita</em></h2>
+          <p>Agenda tu visita en segundos. Nuestro equipo confirmará tu cita a la brevedad.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+              <div><strong>WhatsApp</strong><span>+51 999 888 777</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div><strong>Teléfono</strong><span>01 234 5678</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div><strong>Email</strong><span>hola@barberstudio.pe</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div><strong>Dirección</strong><span>Av. Larco 1234, Miraflores, Lima</span></div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="contacto-form">
+          <form id="reservaForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono / WhatsApp *</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+51 999 000 000" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="servicio">Servicio de interés *</label>
+              <select id="servicio" name="servicio" required>
+                <option value="">Selecciona un servicio</option>
+                <option>Corte Clásico</option>
+                <option>Barba & Arreglo</option>
+                <option>Tratamiento Facial</option>
+                <option>Experiencia VIP</option>
+                <option>Coloración</option>
+                <option>Cejas & Acabados</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fecha">Fecha preferida *</label>
+                <input type="date" id="fecha" name="fecha" required />
+              </div>
+              <div class="form-group">
+                <label for="hora">Hora preferida *</label>
+                <select id="hora" name="hora" required>
+                  <option value="">Selecciona hora</option>
+                  <option>9:00 AM</option><option>10:00 AM</option>
+                  <option>11:00 AM</option><option>12:00 PM</option>
+                  <option>1:00 PM</option><option>2:00 PM</option>
+                  <option>3:00 PM</option><option>4:00 PM</option>
+                  <option>5:00 PM</option><option>6:00 PM</option>
+                  <option>7:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje adicional</label>
+              <textarea id="mensaje" name="mensaje" rows="3" placeholder="¿Algún estilo en mente o información adicional?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-block">
+              <i class="fas fa-calendar-check"></i> Confirmar Reserva
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <h3>¡Reserva Enviada!</h3>
+            <p>Nos comunicaremos contigo en los próximos 15 minutos para confirmar tu cita.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <span class="logo-icon"><i class="fas fa-scissors"></i></span>
+            <div class="logo-text">
+              <span class="logo-main">BARBER</span>
+              <span class="logo-sub">STUDIO</span>
+            </div>
+          </a>
+          <p>El destino premium del caballero moderno. Donde el arte del barbero se convierte en una experiencia de lujo.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Corte Clásico</a></li>
+            <li><a href="#servicios">Barba & Arreglo</a></li>
+            <li><a href="#servicios">Tratamiento Facial</a></li>
+            <li><a href="#servicios">Experiencia VIP</a></li>
+            <li><a href="#servicios">Coloración</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#equipo">Nuestro equipo</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> Av. Larco 1234, Miraflores</li>
+            <li><i class="fas fa-phone"></i> 01 234 5678</li>
+            <li><i class="fab fa-whatsapp"></i> +51 999 888 777</li>
+            <li><i class="fas fa-envelope"></i> hola@barberstudio.pe</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Barber Studio. Todos los derechos reservados.</p>
+        <p>Diseñado con <i class="fas fa-heart" style="color:#c9a84c"></i> para el caballero moderno</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOTANTE ===== -->
+  <a href="https://wa.me/51999888777?text=Hola%20Barber%20Studio%2C%20quisiera%20reservar%20una%20cita" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">¡Chatea con nosotros!</span>
+  </a>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
